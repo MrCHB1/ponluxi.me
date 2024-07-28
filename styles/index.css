@@ -130,7 +130,7 @@ body {
 .videoPlayer {
     position: fixed;
     z-index: -1;
-    width: 100%;
+    width: 100vw;
 }
 
 .line {
@@ -184,5 +184,24 @@ body {
 
 .WebMain {
     position: absolute;
+    left: 0;
     top: 48vw;
+    width: 100%;
+}
+
+.profilePicture {
+    position: absolute;
+    top: 5vw;
+    right: 5vw;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 1vw;
+}
+.profileDescription {
+    position: absolute;
+    top: 5vw;
+    left: 5vw;
+    width: 60vw;
+    height: 25vw;
+    font-size: 1.3vw;
 }
