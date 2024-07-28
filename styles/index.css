@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(37, 37, 37);
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: white;
+}
+
+.menubar {
+    /* background-color: black; */
+    position: fixed;
+    width: 100%;
+    height: 5vw;
+    left: 0;
+    top: 0;
+}
+
+.homeButton {
+    position: fixed;
+    top: 0.5vw;
+    left: 0.5vw;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 1vw;
+    overflow: hidden;
+    cursor: pointer;
+}
+.homeButtonImg {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.WebMain {
+    position: absolute;
+    top: 5vw;
+}
