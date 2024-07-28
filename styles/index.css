@@ -22,6 +22,7 @@ body {
     height: 5vw;
     left: 0;
     top: 0;
+    font-family: AvenirBlack;
 }
 
 .homeButton {
@@ -38,6 +39,59 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+}
+
+.midisButton {
+    position: fixed;
+    top: 0.5vw;
+    left: 5.5vw;
+    width: 8vw;
+    height: 4vw;
+    font-size: 2vw;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.soundfontsButton {
+    position: fixed;
+    top: 0.5vw;
+    left: 14.5vw;
+    width: 13.5vw;
+    height: 4vw;
+    font-size: 2vw;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.softwareButton {
+    position: fixed;
+    top: 0.5vw;
+    left: 29vw;
+    width: 11vw;
+    height: 4vw;
+    font-size: 2vw;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blogButton {
+    position: fixed;
+    top: 0.5vw;
+    left: 41vw;
+    width: 7vw;
+    height: 4vw;
+    font-size: 2vw;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .WebMain {
