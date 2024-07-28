@@ -119,7 +119,56 @@ body {
     backdrop-filter: blur(6px);
 }
 
+.line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1vw;
+}
+.line .lineSegment1 {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 40vw;
+    height: 0.1vw;
+    top: 0.45vw;
+    left: 1vw;
+}
+.line .lineSegment2 {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 40vw;
+    height: 0.1vw;
+    top: 0.45vw;
+    right: 1vw;
+}
+.line .lineArrow1 {
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+    top: -0.25vw;
+    right: 41vw;
+}
+.line .lineArrow2 {
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+    top: -0.25vw;
+    left: 41vw;
+    transform: rotate(180deg);
+}
+.line .lineTitle {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -0.25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-family: AvenirBlack;
+}
+
 .WebMain {
     position: absolute;
-    top: 46vw;
+    top: 48vw;
 }
