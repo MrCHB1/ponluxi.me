@@ -55,6 +55,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 150ms;
+}
+.midisButton:hover {
+    color: rgb(255, 255, 255);
 }
 .soundfontsButton {
     position: fixed;
@@ -68,6 +73,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 150ms;
+}
+.soundfontsButton:hover {
+    color: rgb(255, 255, 255);
 }
 .softwareButton {
     position: fixed;
@@ -81,6 +91,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 150ms;
+}
+.softwareButton:hover {
+    color: rgb(255, 255, 255);
 }
 .blogButton {
     position: fixed;
@@ -94,6 +109,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 150ms;
+}
+.blogButton:hover {
+    color: rgb(255, 255, 255);
 }
 
 .backgroundVideo {
