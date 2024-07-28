@@ -1,8 +1,18 @@
+@font-face {
+    font-family: Avenir;
+    src: url("../fonts/AvenirLTStd-Book.otf");
+}
+@font-face {
+    font-family: AvenirBlack;
+    src: url("../fonts/AvenirLTStd-Black.otf");
+}
+
 body {
     background-color: rgb(37, 37, 37);
     overflow-x: hidden;
     overflow-y: auto;
     color: white;
+    font-family: Avenir;
 }
 
 .menubar {
