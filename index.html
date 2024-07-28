@@ -1,27 +1,92 @@
 <!DOCTYPE html>
+
+<html lang="en">
+
 <head>
     <title>ponluxime</title>
     <meta content="ponluxi.me" property="og:title" />
     <meta content="omg? ponluxime official site real?" property="og:description" />
-    <meta content="#FF8000" data-react-helmet="true" name="theme-color"/>
+    <meta content="#FF8000" data-react-helmet="true" name="theme-color" />
     <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
-    <div class="menubar">
-        <div class="homeButton">
-            <img src="images/icon.png" class="homeButtonImg">
-        </div>
-        <div class="midisButton"><span>MIDIs</span></div>
-        <div class="soundfontsButton"><span>SoundFonts</span></div>
-        <div class="softwareButton"><span>Software</span></div>
-        <div class="blogButton"><span>Blog</span></div>
+    <div id="menubar" class="menubar">
+        <label for="menu-toggle"><img src="/icons/MdiMenu.svg" alt="Menu"></label>
+        <input type="checkbox" id="menu-toggle" class="hidden" checked>
+        <ul class="menulist">
+            <li><a href="/">Home</a></li>
+            <li><a href="/socials">Socials</a></li>
+            <li><a href="/blog">Blog</a></li>
+        </ul>
     </div>
 
-    <div class="WebMain">
-        <div class="WebMainTitle">
-            Welcome to ponluxi.me
-        </div>
-        The official site for ponluxime.<br>
-        hey sillies it is I :3
+    <div class="social-bar">
+        <a href="">
+            <img src="/icons/Fa6BrandsYoutube.svg" alt="">
+        </a>
+        <a href="">
+            <img src="/icons/Fa6BrandsDiscord.svg" alt="">
+        </a>
+        <a href="">
+            <img src="/icons/Fa6BrandsXTwitter.svg" alt="">
+        </a>
+        <a href="">
+            <img src="/icons/Fa6BrandsRedditAlien.svg" alt="">
+        </a>
+        <a href="">
+            <img src="/icons/Fa6BrandsGithub.svg" alt="">
+        </a>
+        <a href="">
+            <img src="/icons/Fa6BrandsTwitch.svg" alt="">
+        </a>
     </div>
+
+    <div class="hero">
+        <div class="bg-video">
+            <video src="/videos/bg-video.mp4" autoplay muted loop></video>
+        </div>
+        <h1>
+            ponluxime
+        </h1>
+        <p>
+            Welcome to my site!!
+        </p>
+    </div>
+
+    <main>
+        <h1>
+            About me
+        </h1>
+
+        <div class="main-content">
+            <div class="main-content-text">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam beatae voluptate ullam dolor natus
+                    excepturi illum ad architecto ducimus alias! Voluptas perspiciatis debitis id repudiandae enim
+                    delectus ratione consequuntur maiores?
+                    Recusandae, ab accusantium! Deserunt, delectus omnis quas voluptas sequi mollitia voluptates
+                    debitis, ab tempore fuga beatae unde porro possimus, magnam dignissimos dolor.
+                    Laborum excepturi, voluptatum ducimus veritatis nam rerum cum nesciunt doloribus itaque. Corrupti
+                    amet ipsa ratione culpa harum saepe perferendis itaque aperiam laborum.
+                    <br />
+                    <br />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam beatae voluptate ullam dolor natus
+                    excepturi illum ad architecto ducimus alias! Voluptas perspiciatis debitis id repudiandae enim
+                    delectus ratione consequuntur maiores?
+                    Recusandae, ab accusantium! Deserunt, delectus omnis quas voluptas sequi mollitia voluptates
+                    debitis, ab tempore fuga beatae unde porro possimus, magnam dignissimos dolor.
+                    Laborum excepturi, voluptatum ducimus veritatis nam rerum cum nesciunt doloribus itaque. Corrupti
+                    amet ipsa ratione culpa harum saepe perferendis itaque aperiam laborum.
+                </p>
+            </div>
+            <div class="main-content-avatar">
+                <img src="/images/icon.png" alt="ponluxime">
+            </div>
+        </div>
+    </main>
+
+    <script src="/scripts/index.js"></script>
 </body>
+
+</html>

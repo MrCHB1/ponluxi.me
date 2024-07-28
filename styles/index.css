@@ -1,100 +1,161 @@
 @font-face {
-    font-family: Avenir;
-    src: url("../fonts/AvenirLTStd-Book.otf");
+  font-family: Avenir;
+  src: url("../fonts/AvenirLTStd-Book.otf");
 }
 @font-face {
-    font-family: AvenirBlack;
-    src: url("../fonts/AvenirLTStd-Black.otf");
+  font-family: AvenirBlack;
+  src: url("../fonts/AvenirLTStd-Black.otf");
+}
+
+:root {
+  --background-color: #252525;
+  --background-color-dark: #1a1a1a;
+  --background-color-light: #3a3a3a;
+  --text-color: #f5efef;
+  --primary-color: #e39c9c;
+  --secondary-color: #8a1818;
+  --accent-color: #ee3131;
 }
 
 body {
-    background-color: rgb(37, 37, 37);
-    overflow-x: hidden;
-    overflow-y: auto;
-    color: white;
-    font-family: Avenir;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: white;
+  font-family: Avenir;
+  margin: 0;
 }
 
 .menubar {
-    /* background-color: black; */
-    position: fixed;
-    width: 100%;
-    height: 5vw;
-    left: 0;
-    top: 0;
-    font-family: AvenirBlack;
+  /* background-color: black; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  padding: 0% 1rem;
+  font-family: AvenirBlack;
+  transition: all 0.5s;
+  border-bottom: 1px solid transparent;
+  z-index: 100;
 }
 
-.homeButton {
-    position: fixed;
-    top: 0.5vw;
-    left: 0.5vw;
-    width: 4vw;
-    height: 4vw;
-    border-radius: 1vw;
-    overflow: hidden;
-    cursor: pointer;
-}
-.homeButtonImg {
-    padding: 0;
-    width: 100%;
-    height: 100%;
+.hidden {
+  position: absolute;
+  left: -100vw;
 }
 
-.midisButton {
-    position: fixed;
-    top: 0.5vw;
-    left: 4.5vw;
-    width: 8vw;
-    height: 4vw;
-    font-size: 2vw;
-    overflow: hidden;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.soundfontsButton {
-    position: fixed;
-    top: 0.5vw;
-    left: 12.5vw;
-    width: 13.5vw;
-    height: 4vw;
-    font-size: 2vw;
-    overflow: hidden;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.softwareButton {
-    position: fixed;
-    top: 0.5vw;
-    left: 26vw;
-    width: 11vw;
-    height: 4vw;
-    font-size: 2vw;
-    overflow: hidden;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.blogButton {
-    position: fixed;
-    top: 0.5vw;
-    left: 37vw;
-    width: 7vw;
-    height: 4vw;
-    font-size: 2vw;
-    overflow: hidden;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.menulist {
+  visibility: hidden;
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 22px;
+  line-height: 24px;
 }
 
-.WebMain {
-    position: absolute;
-    top: 5vw;
+#menu-toggle:checked ~ .menulist {
+  visibility: visible;
+}
+
+.menulist a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background-color: var(--background-color-dark);
+  padding: 1rem;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  border-left: 2px solid var(--primary-color);
+  border-right: none;
+}
+
+.social-bar img {
+  color: white;
+  width: 32px;
+  height: 32px;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+}
+
+.hero .bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 40%;
+  z-index: -10;
+}
+
+.hero .bg-video video {
+  filter: blur(16px);
+}
+
+.hero h1 {
+  font-size: 5rem;
+  line-height: 4rem;
+  text-align: center;
+  font-weight: bolder;
+  margin: 2rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0% 5rem 0% 2rem;
+  background-color: var(--background-color);
+}
+
+main h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: bolder;
+  margin: 2rem;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.main-content-text {
+  padding: 0% 2rem 0% 0rem;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+}
+
+.main-content-avatar {
+  width: 24rem;
+  height: auto;
+}
+
+.main-content-avatar img {
+  width: 100%;
+  height: 100%;
 }
