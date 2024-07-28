@@ -23,6 +23,7 @@ body {
     left: 0;
     top: 0;
     font-family: AvenirBlack;
+    backdrop-filter: blur(12px);
 }
 
 .homeButton {
@@ -100,12 +101,13 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    height: 40vw;
+    height: 45vw;
     z-index: -1;
     overflow: hidden;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
 .videoOverlay {
     position: absolute;
@@ -119,5 +121,5 @@ body {
 
 .WebMain {
     position: absolute;
-    top: 5vw;
+    top: 46vw;
 }
