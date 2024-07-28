@@ -44,7 +44,7 @@ body {
 .midisButton {
     position: fixed;
     top: 0.5vw;
-    left: 5.5vw;
+    left: 4.5vw;
     width: 8vw;
     height: 4vw;
     font-size: 2vw;
@@ -57,7 +57,7 @@ body {
 .soundfontsButton {
     position: fixed;
     top: 0.5vw;
-    left: 14.5vw;
+    left: 12.5vw;
     width: 13.5vw;
     height: 4vw;
     font-size: 2vw;
@@ -70,7 +70,7 @@ body {
 .softwareButton {
     position: fixed;
     top: 0.5vw;
-    left: 29vw;
+    left: 26vw;
     width: 11vw;
     height: 4vw;
     font-size: 2vw;
@@ -83,7 +83,7 @@ body {
 .blogButton {
     position: fixed;
     top: 0.5vw;
-    left: 41vw;
+    left: 37vw;
     width: 7vw;
     height: 4vw;
     font-size: 2vw;
